@@ -177,19 +177,19 @@ The image ViT is used as the starting checkpoint of the fusion ViT. The training
 
 In this paper, we study the zero-shot sketch-based image retrieval (ZS-SBIR) task, which retrieves natural images related to sketch queries from unseen categories. In the literature, convolutional neural networks (CNNs) have become the de-facto standard and they are either trained end-to-end or used to extract pretrained features for images and sketches. However, CNNs are limited in modeling the global structural information of objects due to the intrinsic locality of convolution operations. To this end, we propose a Transformer-based approach called Three-Way Vision Transformer (TVT) to leverage the ability of Vision Transformer (ViT) to model global contexts due to the global self-attention mechanism. Going beyond simply applying ViT to this task, we propose a token-based strategy of adding fusion and distillation tokens and making them complementary to each other. Specifically, we integrate three ViTs, which are pre-trained on data of each modality, into a three-way pipeline through the processes of distillation and multimodal hypersphere learning. The distillation process is proposed to supervise fusion ViT (ViT with an extra fusion token) with soft targets from modality-specific ViTs, which prevent fusion ViT from catastrophic forgetting. Furthermore, our method learns a multi-modal hypersphere by performing inter- and intra-modal alignment without loss of uniformity, which aims to bridge the modal gap between modalities of sketch and image and avoid the collapse in dimensions. Extensive experiments on three benchmark datasets, i.e., Sketchy, TU-Berlin, and QuickDraw, demonstrate the superiority of our TVT method over the state-of-the-art ZS-SBIR methods.
 
-![image-20221203145156932](C:\Users\jiatelin\AppData\Roaming\Typora\typora-user-images\image-20221203145156932.png)
+![image-20221203145156932](.\image-20221203145156932.png)
 
 ### Overall Results
 
-![image-20221203145331343](C:\Users\jiatelin\AppData\Roaming\Typora\typora-user-images\image-20221203145331343.png)
+![image-20221203145331343](.\image-20221203145331343.png)
 
 ![image-20221203145345379](C:\Users\jiatelin\AppData\Roaming\Typora\typora-user-images\image-20221203145345379.png)
 
 ### Visualization
 
-![image-20221203145445381](C:\Users\jiatelin\AppData\Roaming\Typora\typora-user-images\image-20221203145445381.png)
+![image-20221203145445381](.\image-20221203145445381.png)
 
-![image-20221203145458810](C:\Users\jiatelin\AppData\Roaming\Typora\typora-user-images\image-20221203145458810.png)
+![image-20221203145458810](.\image-20221203145458810.png)
 
 ### Cite
 
